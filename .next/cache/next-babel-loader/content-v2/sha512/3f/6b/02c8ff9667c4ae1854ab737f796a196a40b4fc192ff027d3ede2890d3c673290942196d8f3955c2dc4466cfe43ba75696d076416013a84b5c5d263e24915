@@ -1,0 +1,1 @@
+{"ast":null,"code":"import _ from 'lodash';\nexport default function prepareForSerializatoin(obj) {\n  return obj.mapValues(obj, function (value) {\n    return typeof value === 'undefined' ? null : value;\n  });\n}","map":null,"metadata":{},"sourceType":"module"}
